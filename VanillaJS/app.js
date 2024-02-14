@@ -53,7 +53,7 @@ function resetAnimation() {
 function validateInputs() {
   let flag = true;
   // New clients should not be empty and be possitive number
-  if (!newClients.value || +newClients.value < 1) {
+  if (+newClients.value < 0) {
     showError("Incorrect new clients value");
     flag = false;
   }
