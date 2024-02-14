@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastComet - Client Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/fd480ad751.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="calculator">
+        <div class="calculator__error"></div>
+        <p class="calculator__title">Clients Calculator</p>
+        <div class="calculator__fields">
+          <input
+            type="number"
+            name="newClients"
+            class="calculator__fields__input"
+            id="new-clients"
+            placeholder="New Clients"
+          />
+          <input
+            type="number"
+            name="allClients"
+            id="all-clients"
+            class="calculator__fields__input"
+            placeholder="All Clients"
+          />
+        </div>
+
+        <div class="calculator__chart">
+          <svg class="calculator__chart__progress" width="500" height="500">
+            <circle
+              class="calculator__chart__progress__circle"
+              cx="250"
+              cy="250"
+              stroke="#ffffff"
+              r="220"
+              fill="transparent"
+              stroke-width="30"
+            />
+            <circle
+              class="calculator__chart__progress__circle"
+              id="percentage-circle"
+              cx="250"
+              cy="250"
+              stroke="#499FD7"
+              r="220"
+              fill="transparent"
+              stroke-width="30"
+            />
+          </svg>
+          <div>
+            Percent Capacity -
+            <span class="calculator__chart__percentage" id="percentage-number"
+              >0%</span
+            >
+          </div>
+          <input
+            type="button"
+            class="calculator__chart__button"
+            value="Submit"
+          />
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
