@@ -25,8 +25,11 @@
   padding: 15px 10px;
   border: 1px solid rgb(199, 199, 199);
   border-radius: 4px;
-  font-style: italic;
   font-size: 20px;
+}
+
+.calculator__fields__input::placeholder {
+  font-style: italic;
 }
 
 .calculator__chart {
